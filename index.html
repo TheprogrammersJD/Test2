@@ -10448,8 +10448,6 @@ function random(min, max){
 	return numtoreturn;
 	//return Math.floor(Math.random()*(max-min))+min;
 }
-var mx = 0;
-var my = 0;
 var mousedata;
 function mouseClicked(){
 	fill(0, 0, 255);
@@ -10466,13 +10464,8 @@ function click(coordx, coordy){
 }
 	 
 ws.onmessage = function(x, y){
-	//console.log(i1 + ", " + i2);
-	//mx = i1;
-	//my = i2;
-	mx++;
-	mx--;
-	my++;
-	my--;
+	console.log(x + ", " + y);
+
 	fill(255, 0, 0);
 	ellipse(x, y, widthorheight/10, widthorheight/10);
 };
